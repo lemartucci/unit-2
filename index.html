@@ -4,17 +4,46 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
             <title></title>
-        
-        
+
+        <!--put your external stylesheet links here-->
         <link rel="stylesheet" href="lib/leaflet/leaflet.css">
         <link rel="stylesheet" href="css/style.css">
-    
+        <link real=""stylesheet type = "text/css" href= "css/style.css">
+        <!--[if IE<9]>
+            <link rel="stylesheet" href="css/style.ie.css">
+        <![endif]-->
+   
     </head>
 
     <body>
+        <div class = "header">
+            <img src="img/bee.png" alt="bee"/>
+                <h1>Honeybee Colony Inventory on Farms across the Contiguous United States</h1> </div>
+     
         <div id="mapid"></div>
-        <div id="panel"></div>
+
+        <svg></svg>
+
+        <div class="column_left">
+            <p>This interactive map illustrates the inventory of honeybee colonies on farms across 
+                the contiguous United States from 1987 to 2017. Honeybees, along with other bee species, provide the critical
+                ecosystem service of pollination for over 90 major food crops, and are responsible
+                for 3 out of every 4 bites of food you consume. Due to the global
+                decline of wild honeybee populations, farms are increasingly reliant on purchased or rented honeybee colonies to
+                pollinate their crops.Honeybee decline poses major threats to food security and has serious economic and environmental
+                implications. In response to global population growth, agricultural intensification will increase, which will lead
+                to more pesticide use, habitat degradation, and biodiversity loss. </p></div> 
+            
+        <div class = "image">
+            <img src="img/colony.jpg" alt="bee colony farm box" height=140px width=150px/>
+                <p>Honeybee colony on farm</p>
+        </div>
         
+        <div class="footer">
+            <p> <b>Sources:</b> USDA Census of Agriculture, thebeeconservancy.org, nrcs.usda.gov, honeybee colony photo: wallpaperflare.com, Noun Project: bee icon by Syaiful Amri, honeycomb arrow icons by Tresnatiq </p></div>
+  
+
+        <!--put your external script links here-->
         <script type="text/javascript" src="lib/leaflet/leaflet-src.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
