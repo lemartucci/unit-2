@@ -126,18 +126,6 @@ function calcStats(data) {//Function to retreive information about honeybee data
     var year = attribute.split("_")[1];
     //replace legend content
     document.querySelector("span.year").innerHTML = year;
-  
-    var circleValues = getCircleValues(attribute);//setting variable circleValues to the values calculted in the getCircleValues function
-  
-    for (var key in circleValues) {//for loop for getting the radius information from circleValues variable
-      var radius = calcPropRadius(circleValues[key]);//radius found from calcPropRadius function and circleValues variable
-      //setting attributes for radius
-      document.querySelector("#" + key).setAttribute("cy", 59 - radius);//cy is y-axis coordinate of center point of the circle
-      document.querySelector("#" + key).setAttribute("r", radius)//r is the radius of the circle
-      //round the circleValues of honeybee inventory data for the legend and add text "colonies" after honeybee inventory data
-      document.querySelector("#" + key + "-text").textContent = Math.round(circleValues[key] * 100)/100+ " colonies";
-
-    }
   }
   
   //Function to update the proportional symbols based on their attribute values
